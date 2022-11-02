@@ -24,16 +24,17 @@
 .section_sx_contact {
     background-color: white;
     border: 1px solid black;
-    height: 80vh;
+    height: 700px;
 }
 
 .chat {
     background-image: url(../img/mine.jpg);
-    height: 75vh;
+    height: 650px;
+    overflow-y: scroll;
 }
 
 .chat_bar {
-    height: 5vh;
+    height: 50px;
     background-color: var(--bg_text);
 }
 
@@ -69,4 +70,31 @@ img {
 
 .text_area input {
     width: 800px;
+}
+
+/*contatti*/
+
+.contatti{
+    overflow-y: scroll;
+    height: 620px;
+}
+
+/*messaggi*/
+
+.message{
+    background-color: var(--bg_notifica);
+    display: inline-block;
+    border-radius: 10px; 
+    width: 300px;
+}
+
+.my_message{
+    background-color: white;
+    display: inline-block;
+    border-radius: 10px; 
+    width: 300px;
+}
+
+.time{
+    font-size: 10px;
 }

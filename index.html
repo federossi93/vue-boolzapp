@@ -8,7 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>vue-boolzapp</title>
 </head>
 
@@ -55,68 +57,18 @@
                         </div>
 
                         <!--contatti-->
-                        <div class="contact d-flex justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <img src="./assets/img/avatar_1.jpg" alt="">
-                                <div>
-                                    <div>Michele</div>
-                                    <div>Ultimo messaggio inviato</div>
+                        <div class="contatti">
+                            <div class="contact d-flex justify-content-between py-3" v-for="contatto in contacts">
+                                <div class="d-flex align-items-center">
+                                    <img :src="`./assets/img/avatar${contatto.avatar}.jpg`" alt="">
+                                    <div>
+                                        <div>{{contatto.name}}</div>
+                                        <div>Ultimo messaggio inviato</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="mx-2">
-                                <div>12:00</div>
-                            </div>
-                        </div>
-
-                        <div class="contact d-flex justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <img src="./assets/img/avatar_2.jpg" alt="">
-                                <div>
-                                    <div>Michele</div>
-                                    <div>Ultimo messaggio inviato</div>
+                                <div class="mx-2">
+                                    <div>12:00</div>
                                 </div>
-                            </div>
-                            <div class="mx-2">
-                                <div>12:00</div>
-                            </div>
-                        </div>
-
-                        <div class="contact d-flex justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <img src="./assets/img/avatar_3.jpg" alt="">
-                                <div>
-                                    <div>Michele</div>
-                                    <div>Ultimo messaggio inviato</div>
-                                </div>
-                            </div>
-                            <div class="mx-2">
-                                <div>12:00</div>
-                            </div>
-                        </div>
-
-                        <div class="contact d-flex justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <img src="./assets/img/avatar_4.jpg" alt="">
-                                <div>
-                                    <div>Michele</div>
-                                    <div>Ultimo messaggio inviato</div>
-                                </div>
-                            </div>
-                            <div class="mx-2">
-                                <div>12:00</div>
-                            </div>
-                        </div>
-
-                        <div class="contact d-flex justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <img src="./assets/img/avatar_5.jpg" alt="">
-                                <div>
-                                    <div>Michele</div>
-                                    <div>Ultimo messaggio inviato</div>
-                                </div>
-                            </div>
-                            <div class="mx-2">
-                                <div>12:00</div>
                             </div>
                         </div>
                     </div>
@@ -144,23 +96,61 @@
 
 
                     <!--chat-->
-                <div class="chat">
-                    
-                </div>
-                <div class="chat_bar d-flex justify-content-around align-items-center">
-                    <div>
-                        <i class="fa-regular fa-face-smile"></i>
+                    <div class="chat">
+                        <div class="container">
+                            <div class="row flex-column m-5">
+
+                                <div class="col text-end">
+                                    <div class="message p-2 m-2">
+                                        <div class="text-start">
+                                            Hai portato il cane?
+                                        </div>
+                                        <div class="time">
+                                            15:30
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col text-end">
+                                    <div class="message p-2 m-2">
+                                        <div class="text-start">
+                                            Ricordati di stendere i panni
+                                        </div>
+                                        <div class="time">
+                                            15:30
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="my_message p-2 m-2">
+                                        <div class="">
+                                            Ricordati di stendere i panni
+                                        </div>
+                                        <div class="time text-end">
+                                            16:15
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="text_area">
-                        <input type="text">
+
+                    <!--chat bar-->
+                    <div class="chat_bar d-flex justify-content-around align-items-center">
+                        <div>
+                            <i class="fa-regular fa-face-smile"></i>
+                        </div>
+                        <div class="text_area">
+                            <input type="text">
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-microphone"></i>
+                        </div>
                     </div>
-                    <div>
-                        <i class="fa-solid fa-microphone"></i>
-                    </div>
-                </div>
                 </div>
 
-                
+
             </div>
         </div>
     </div>
