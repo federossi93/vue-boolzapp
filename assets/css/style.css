@@ -1,9 +1,9 @@
 :root {
     --bg_top: #009688;
-    background: #8EDAFC;
+    --bg_notifiche: #8EDAFC;
     background: #D5F9BA;
     --bg_bot: #D9DBD5;
-    background: #E9EBEB;
+    --bg_nav: #E9EBEB;
     background: #EAEAEA;
 }
 
@@ -14,4 +14,36 @@
 
 .bg_bot{
     background-color: var(--bg_bot);
+}
+
+.notifiche{
+    background-color: var(--bg_notifiche);
+}
+
+/* bg color */
+
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.nav_sx{
+    width: 400px;
+    background-color: var(--bg_nav);
+    border: 1px solid black;
+}
+
+.nav_dx{
+    width: 1000px;
+    background-color: var(--bg_nav);
+    border: 1px solid black;
+}
+
+.app{
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
