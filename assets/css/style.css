@@ -1,49 +1,72 @@
 :root {
     --bg_top: #009688;
     --bg_notifiche: #8EDAFC;
-    background: #D5F9BA;
+    --bg_notifica: #D5F9BA;
     --bg_bot: #D9DBD5;
     --bg_nav: #E9EBEB;
-    background: #EAEAEA;
+    --bg_text: #EAEAEA;
 }
 
-.bg_top{
+.bg_top {
     background-color: var(--bg_top);
     height: 100px;
 }
 
-.bg_bot{
+.bg_bot {
     background-color: var(--bg_bot);
+    height: 100vh;
 }
 
-.notifiche{
+.notifiche {
     background-color: var(--bg_notifiche);
+}
+
+.section_sx_contact {
+    background-color: white;
+    border: 1px solid black;
+    height: 80vh;
+}
+
+.chat {
+    background-image: url(../img/mine.jpg);
+    height: 75vh;
+}
+
+.chat_bar {
+    height: 5vh;
+    background-color: var(--bg_text);
 }
 
 /* bg color */
 
-img{
+img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
 
-.nav_sx{
+.nav_sx {
     width: 400px;
     background-color: var(--bg_nav);
     border: 1px solid black;
 }
 
-.nav_dx{
+.nav_dx {
     width: 1000px;
     background-color: var(--bg_nav);
     border: 1px solid black;
 }
 
-.app{
-    margin-top: 20px;
+.app {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 20px;
+    left: 50px;
+}
+
+.search input {
+    width: 100%;
+}
+
+.text_area input {
+    width: 800px;
 }
