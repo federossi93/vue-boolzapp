@@ -9,12 +9,12 @@
 
 .bg_top {
     background-color: var(--bg_top);
-    height: 100px;
+    height: 10vh;
 }
 
 .bg_bot {
     background-color: var(--bg_bot);
-    height: 100vh;
+    height: 90vh;
 }
 
 .notifiche {
@@ -58,10 +58,11 @@ img {
     border: 1px solid black;
 }
 
-.app {
+.apps {
     position: absolute;
-    top: 20px;
-    left: 50px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
 }
 
 .search input {
@@ -74,27 +75,27 @@ img {
 
 /*contatti*/
 
-.contatti{
+.contatti {
     overflow-y: scroll;
     height: 620px;
 }
 
 /*messaggi*/
 
-.message{
+.message {
     background-color: var(--bg_notifica);
     display: inline-block;
-    border-radius: 10px; 
+    border-radius: 10px;
     width: 300px;
 }
 
-.my_message{
+.my_message {
     background-color: white;
     display: inline-block;
-    border-radius: 10px; 
+    border-radius: 10px;
     width: 300px;
 }
 
-.time{
+.time {
     font-size: 10px;
 }
