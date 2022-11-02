@@ -1,0 +1,17 @@
+:root {
+    --bg_top: #009688;
+    background: #8EDAFC;
+    background: #D5F9BA;
+    --bg_bot: #D9DBD5;
+    background: #E9EBEB;
+    background: #EAEAEA;
+}
+
+.bg_top{
+    background-color: var(--bg_top);
+    height: 100px;
+}
+
+.bg_bot{
+    background-color: var(--bg_bot);
+}
