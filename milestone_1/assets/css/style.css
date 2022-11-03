@@ -1,0 +1,131 @@
+:root {
+    --bg_top: #009688;
+    --bg_notifiche: #8EDAFC;
+    --bg_notifica: #D5F9BA;
+    --bg_bot: #D9DBD5;
+    --bg_nav: #E9EBEB;
+    --bg_text: #EAEAEA;
+}
+
+.bg_top {
+    background-color: var(--bg_top);
+    height: 10vh;
+}
+
+.bg_bot {
+    background-color: var(--bg_bot);
+    height: 90vh;
+}
+
+.notifiche {
+    background-color: var(--bg_notifiche);
+}
+
+.section_sx_contact {
+    background-color: white;
+    height: 700px;
+}
+
+.chat {
+    background-image: url(../img/mine.jpg);
+    height: 650px;
+    overflow-y: scroll;
+}
+
+.chat_bar {
+    height: 50px;
+    background-color: var(--bg_text);
+}
+
+i{
+    color: #999999;
+}
+
+/* bg color */
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.nav_sx {
+    width: 400px;
+    background-color: var(--bg_nav);
+}
+
+.nav_dx {
+    width: 1000px;
+    background-color: var(--bg_nav);
+}
+
+.apps {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+/*notifiche*/
+
+.icon_notifica{
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    height:50px ;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.icon_notifica i{
+    color: var(--bg_notifiche);
+}
+
+/*search*/
+
+.search input {
+    width: 100%;
+    border: none;
+}
+
+.search button {
+    width: 30%;
+    border-radius: 10px;
+    border: none;
+}
+
+.text_area input {
+    width: 800px;
+}
+
+/*contatti*/
+
+.contatti {
+    overflow-y: scroll;
+    height: 600px;
+}
+
+.contact:hover{
+    background-color: rgb(210, 210, 210);
+    cursor: pointer;
+}
+
+/*messaggi*/
+
+.message {
+    background-color: var(--bg_notifica);
+    display: inline-block;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.my_message {
+    background-color: white;
+    display: inline-block;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.time {
+    font-size: 10px;
+}
