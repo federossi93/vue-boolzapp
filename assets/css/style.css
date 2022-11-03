@@ -23,7 +23,6 @@
 
 .section_sx_contact {
     background-color: white;
-    border: 1px solid black;
     height: 700px;
 }
 
@@ -38,6 +37,10 @@
     background-color: var(--bg_text);
 }
 
+i{
+    color: #999999;
+}
+
 /* bg color */
 
 img {
@@ -49,13 +52,11 @@ img {
 .nav_sx {
     width: 400px;
     background-color: var(--bg_nav);
-    border: 1px solid black;
 }
 
 .nav_dx {
     width: 1000px;
     background-color: var(--bg_nav);
-    border: 1px solid black;
 }
 
 .apps {
@@ -65,8 +66,32 @@ img {
     transform: translate(-50%, -30%);
 }
 
+/*notifiche*/
+
+.icon_notifica{
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    height:50px ;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.icon_notifica i{
+    color: var(--bg_notifiche);
+}
+
+/*search*/
+
 .search input {
     width: 100%;
+    border: none;
+}
+
+.search button {
+    width: 30%;
+    border-radius: 10px;
+    border: none;
 }
 
 .text_area input {
@@ -77,7 +102,12 @@ img {
 
 .contatti {
     overflow-y: scroll;
-    height: 620px;
+    height: 600px;
+}
+
+.contact:hover{
+    background-color: rgb(210, 210, 210);
+    cursor: pointer;
 }
 
 /*messaggi*/
@@ -86,14 +116,14 @@ img {
     background-color: var(--bg_notifica);
     display: inline-block;
     border-radius: 10px;
-    width: 300px;
+    width: 200px;
 }
 
 .my_message {
     background-color: white;
     display: inline-block;
     border-radius: 10px;
-    width: 300px;
+    width: 200px;
 }
 
 .time {

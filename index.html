@@ -41,7 +41,9 @@
 
                         <!--notifiche-->
                         <div class="notifiche d-flex align-items-center gap-3">
-                            <i class="fa-solid fa-bell-slash fa-2x"></i>
+                            <div class="mx-2 icon_notifica d-flex justify-content-center">
+                                <i class="fa-solid fa-bell-slash fa-2x"></i>
+                            </div>
                             <div>
                                 <div>Ricevi notifiche di nuovi messaggi</div>
                                 <a href="">Attiva notifiche desktop</a>
@@ -49,7 +51,7 @@
                         </div>
 
                         <!--search-->
-                        <div class="search d-flex">
+                        <div class="search d-flex py-2">
                             <button>
                                 <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                             </button>
@@ -99,11 +101,11 @@
                     <div class="chat">
                         <div class="container">
                             <div class="row flex-column m-5">
-
-                                <div class="col text-end">
+                                <!--inserire if else per status visualizza mess iviato / ricevuto-->
+                                <div class="col text-end" v-for="(messaggio) in contacts[0].messages">
                                     <div class="message p-2 m-2">
                                         <div class="text-start">
-                                            Hai portato il cane?
+                                            {{messaggio.message}}
                                         </div>
                                         <div class="time">
                                             15:30
@@ -111,16 +113,6 @@
                                     </div>
                                 </div>
 
-                                <div class="col text-end">
-                                    <div class="message p-2 m-2">
-                                        <div class="text-start">
-                                            Ricordati di stendere i panni
-                                        </div>
-                                        <div class="time">
-                                            15:30
-                                        </div>
-                                    </div>
-                                </div>
 
                                 <div class="col">
                                     <div class="my_message p-2 m-2">
