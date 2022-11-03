@@ -61,9 +61,8 @@ img {
 
 .apps {
     position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -30%);
+    top: 10px;
+    left: 10px;
 }
 
 /*notifiche*/
@@ -99,7 +98,6 @@ img {
 }
 
 /*contatti*/
-
 .contatti {
     overflow-y: scroll;
     height: 600px;
@@ -112,14 +110,14 @@ img {
 
 /*messaggi*/
 
-.message {
+.my_message {
     background-color: var(--bg_notifica);
     display: inline-block;
     border-radius: 10px;
     width: 200px;
 }
 
-.my_message {
+#message {
     background-color: white;
     display: inline-block;
     border-radius: 10px;
