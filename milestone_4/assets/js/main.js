@@ -167,7 +167,7 @@ createApp({
                             status: 'received'
                         }
                     ]
-                }
+                },
             ],
 
             activeChat: 0,
