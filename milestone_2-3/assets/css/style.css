@@ -7,6 +7,11 @@
     --bg_text: #EAEAEA;
 }
 
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+
 .bg_top {
     background-color: var(--bg_top);
     height: 10vh;

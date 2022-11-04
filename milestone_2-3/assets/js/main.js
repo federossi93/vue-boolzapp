@@ -198,7 +198,8 @@ createApp({
         generateMessage() {
             let messageGenerate = {date: '10/01/2020 15:51:00',message: "ok",status: 'received'}
             this.contacts[this.activeChat].messages.push(messageGenerate)
-        }
+        },
+
 
         
     }
