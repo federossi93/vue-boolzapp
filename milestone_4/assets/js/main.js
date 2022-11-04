@@ -171,6 +171,10 @@ createApp({
             ],
 
             activeChat: 0,
+
+            inputSearch: "",
+
+            mioMessaggio: ""
         }
     },
     methods: {
@@ -200,7 +204,20 @@ createApp({
             this.contacts[this.activeChat].messages.push(messageGenerate)
         },
 
+            searchContacts(){
+                this.contacts.forEach(nameContacts => {
 
+                    if (nameContacts.name.toLowerCase().includes(this.inputSearch.toLowerCase())) {
+                        nameContacts.visible=true
+                        console.log(nameContacts.visible);
+    
+                    }else{
+                        nameContacts.visible=false
+                        console.log(nameContacts.visible);
+                    }
+                });
+            }
+        
         
     }
 }).mount('#app')

@@ -52,15 +52,15 @@
 
                         <!--search-->
                         <div class="search d-flex py-2">
-                            <button>
+                            <button @click="searchContacts()">
                                 <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                             </button>
-                            <input type="text" v-model:="searchContact">
+                            <input type="text"  @keyup.enter="searchContacts()" v-model="inputSearch">
                         </div>
 
                         <!--contatti-->
                         <div class="contatti">
-                            <div class="contact d-flex justify-content-between py-3" v-for="(contatto, i) in contacts" @click="setActiveIndex(i)" v-bind:class="this.activeChat == i ? 'bg-secondary' : '' " >
+                            <div v-show="contatto.visible" class="contact justify-content-between py-3"  v-for="(contatto, i) in contacts" @click="setActiveIndex(i)" v-bind:class="this.activeChat == i ? 'bg-secondary' : '' ">
                                 <div class="d-flex align-items-center">
                                     <img :src="`./assets/img/avatar${contatto.avatar}.jpg`" alt="">
                                     <div>
@@ -107,7 +107,7 @@
                                             {{messaggio.message}}
                                             
                                             <div class="text-end">
-                                                12:00
+                                                {{messaggio.date}}
                                             </div>
                                         </div>
                                     </div>
